@@ -23,10 +23,9 @@ public class Program {
 				System.out.println();
 				System.out.print("Source: ");
 				ChessPosition source = UI.readChessPosition(sc);
-				//proximaaula
-				//boolean [][] possibleMoves = chessMacth.possibleMoves(source);
-			//	UI.clearScreen();
-			//	UI.printBoard(chessMacth.getPieces(), possibleMoves);
+				boolean [][] possibleMoves = chessMacth.possibleMoves(source);
+				UI.clearScreen();
+				UI.printBoard(chessMacth.getPieces(), possibleMoves);
 				
 				System.out.println();
 				System.out.print("Target: ");
